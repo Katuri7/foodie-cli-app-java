@@ -49,5 +49,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions, feedback, or support, please contact:
 
-- E-mail: hello@trainingmug.com
-- GitHub: [Your GitHub Profile](https://github.com/madhusamala-dev)
+- E-mail: vishnu.katuri.work@gmail.com
+- GitHub: [Your GitHub Profile](https://github.com/Katuri7).

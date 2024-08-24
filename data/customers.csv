@@ -1,0 +1,11 @@
+customerId,name,email,password
+C001,John Doe,john.doe@example.com,password123
+C002,Jane Smith,jane.smith@example.com,password456
+C003,Alice Johnson,alice.johnson@example.com,password789
+C004,Bob Brown,bob.brown@example.com,password321
+C005,Charlie Davis,charlie.davis@example.com,password654
+C006,Diana Evans,diana.evans@example.com,password987
+C007,Eve Foster,eve.foster@example.com,password111
+C008,Frank Green,frank.green@example.com,password222
+C009,Grace Harris,grace.harris@example.com,password333
+C010,Hank Ivan,hank.ivan@example.com,password444

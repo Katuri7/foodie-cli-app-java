@@ -1,0 +1,11 @@
+restaurantId,name,address,Menu
+R001,Spice Haven,123 Curry Lane,D001:D002:D003
+R002,Taste of India,456 Spice St,D004:D005:D006
+R003,Royal Tandoor,789 Flavor Ave,D007:D008:D009
+R004,Maharaja's Feast,101 Maharaja Blvd,D001:D005:D007
+R005,Bombay Bistro,202 Masala Rd,D002:D004:D006
+R006,Delhi Delight,303 Chaat Circle,D003:D008:D010
+R007,Punjab Palace,404 Butter Chicken Blvd,D001:D003:D007
+R008,Udupi Upahar,505 South Indian St,D002:D005:D009
+R009,Garam Masala,606 Spicy Ln,D004:D006:D008
+R010,Rajdhani Thali,707 Veggie Blvd,D005:D007:D009

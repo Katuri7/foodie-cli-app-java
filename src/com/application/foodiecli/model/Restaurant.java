@@ -1,10 +1,11 @@
-package com.application.foodiecli.model;
+package com.trainingmug.foodiecli.model;
 
 import java.util.List;
 import java.util.Objects;
 
 public class Restaurant {
-       /*
+
+    /*
     add the following properties
     --------------------------------------
     Datatype                  variable
@@ -12,7 +13,7 @@ public class Restaurant {
     String                      id
     String                      name
     String                      address
-    List<String>                menu
+    List<Dish>                  menu
      */
 
     /*
@@ -106,5 +107,4 @@ public class Restaurant {
                 ", menu=" + menu +
                 '}';
     }
-
 }

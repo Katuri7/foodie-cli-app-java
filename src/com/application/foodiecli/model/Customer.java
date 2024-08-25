@@ -1,10 +1,10 @@
-package com.application.foodiecli.model;
+package com.trainingmug.foodiecli.model;
 
 import java.util.Objects;
 
-public class Coustomer {
+public class Customer {
 
-      /*
+    /*
     add the following properties
     --------------------------------------
     Datatype                  variable
@@ -23,7 +23,6 @@ public class Coustomer {
     5. Override toString() methods
      */
 
-
     private String id;
     private String name;
     private String email;
@@ -33,7 +32,7 @@ public class Coustomer {
     }
 
     // Getter for customerId
-    public String getCustomerId() {
+    public String getId() {
         return id;
     }
 
@@ -90,13 +89,21 @@ public class Coustomer {
             return false;
         }
         Customer customer = (Customer) obj;
-        return Objects.equals(id, customer.id) && Objects.equals(name, customer.name) && Objects.equals(email, customer.email) && Objects.equals(password, customer.password);
+        return Objects.equals(id, customer.id) &&
+                Objects.equals(name, customer.name) &&
+                Objects.equals(email, customer.email) &&
+                Objects.equals(password, customer.password);
     }
 
     // Overriding toString
     @Override
     public String toString() {
-        return "Customer{" + " id='" + id + '\'' + ", name='" + name + '\'' + ", email='" + email + '\'' + ", password='" + password + '\'' + '}';
+        return "Customer{" +
+                " id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
 }

@@ -1,10 +1,9 @@
-package com.application.foodiecli.model;
+package com.trainingmug.foodiecli.model;
 
 import java.util.Objects;
 
 public class Dish {
-
-      /*
+    /*
     add the following properties
     --------------------------------------
     Datatype                  variable
@@ -23,65 +22,87 @@ public class Dish {
     5. Override toString() methods
      */
 
-    private string id;
-    private string name;
-    private string description;
+    private String id;
+    private String name;
+    private String description;
     private double price;
 
     public Dish() {
     }
 
-    public string getId() {
+    // Getter for dishId
+    public String getId() {
         return id;
     }
 
-    public void setId(string id) {
+    // Setter for dishId
+    public Dish setId(String id) {
         this.id = id;
+        return this;
     }
 
-    public string getName() {
+    // Getter for name
+    public String getName() {
         return name;
     }
 
-    public void setName(string name) {
+    // Setter for name
+    public Dish setName(String name) {
         this.name = name;
+        return this;
     }
 
-    public string getDescription() {
+    // Getter for description
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(string description) {
+    // Setter for description
+    public Dish setDescription(String description) {
         this.description = description;
+        return this;
     }
 
+    // Getter for price
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    // Setter for price
+    public Dish setPrice(double price) {
         this.price = price;
+        return this;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Dish dish = (Dish) o;
-        return Double.compare(price, dish.price) == 0 && Objects.equals(id, dish.id) && Objects.equals(name, dish.name) && Objects.equals(description, dish.description);
-    }
-
+    // Overriding hashCode
     @Override
     public int hashCode() {
         return Objects.hash(id, name, description, price);
     }
 
+    // Overriding equals
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Dish dish = (Dish) obj;
+        return Double.compare(dish.price, price) == 0 &&
+                Objects.equals(id, dish.id) &&
+                Objects.equals(name, dish.name) &&
+                Objects.equals(description, dish.description);
+    }
+
+    // Overriding toString
     @Override
     public String toString() {
         return "Dish{" +
-                "id=" + id +
-                ", name=" + name +
-                ", description=" + description +
+                " id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
                 ", price=" + price +
                 '}';
     }

@@ -1,11 +1,13 @@
-package com.application.foodiecli.model;
+package com.trainingmug.foodiecli.model;
 
-import java.sql.Date;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
 public class Order {
-  /*
+
+   /*
     add the following properties
     --------------------------------------
     Datatype                  variable
@@ -28,9 +30,9 @@ public class Order {
     private String id;
     private Customer customer;
     private Restaurant restaurant;
-    private List<Dish> dishes;
+    private List<Dish> dishList;
     private double totalPrice;
-    private Date orderDate;
+    private LocalDate orderDate;
 
     // Constructor
 
@@ -69,13 +71,13 @@ public class Order {
     }
 
     // Getter for dishes
-    public List<Dish> getDishes() {
-        return dishes;
+    public List<Dish> getDishList() {
+        return dishList;
     }
 
     // Setter for dishes
-    public Order setDishes(List<Dish> dishes) {
-        this.dishes = dishes;
+    public Order setDishList(List<Dish> dishList) {
+        this.dishList = dishList;
         return this;
     }
 
@@ -91,12 +93,12 @@ public class Order {
     }
 
     // Getter for orderDate
-    public Date getOrderDate() {
+    public LocalDate getOrderDate() {
         return orderDate;
     }
 
     // Setter for orderDate
-    public Order setOrderDate(Date orderDate) {
+    public Order setOrderDate(LocalDate orderDate) {
         this.orderDate = orderDate;
         return this;
     }
@@ -104,7 +106,7 @@ public class Order {
     // Overriding hashCode
     @Override
     public int hashCode() {
-        return Objects.hash(id, customer, restaurant, dishes, totalPrice, orderDate);
+        return Objects.hash(id, customer, restaurant, dishList, totalPrice, orderDate);
     }
 
     // Overriding equals
@@ -121,7 +123,7 @@ public class Order {
                 Objects.equals(id, order.id) &&
                 Objects.equals(customer, order.customer) &&
                 Objects.equals(restaurant, order.restaurant) &&
-                Objects.equals(dishes, order.dishes) &&
+                Objects.equals(dishList, order.dishList) &&
                 Objects.equals(orderDate, order.orderDate);
     }
 
@@ -132,10 +134,9 @@ public class Order {
                 " id ='" + id + '\'' +
                 ", customer=" + customer +
                 ", restaurant=" + restaurant +
-                ", dishes=" + dishes +
+                ", dishes=" + dishList +
                 ", totalPrice=" + totalPrice +
                 ", orderDate=" + orderDate +
                 '}';
     }
-
 }
